@@ -1,4 +1,4 @@
 fetch_hubble и fetch_space используют одни и те же функции.
 Функция get_picture имеет перемунню directory, данная переменная имеется и в upload_images (image_path- по смыслу
 это тоже самое)
-Вопрос в следующем, может две функции get_file_extension и get_picture, общую переменную вынести в другой файл?
+Вопрос в следующем, может две функции get_file_extension и get_picture и общую переменную directory='images/' вынести в другой файл?
