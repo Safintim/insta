@@ -34,12 +34,6 @@ pip3 install -r requirements.txt
 ```
 
 
-## Как использовать: 
+## Комментарий: 
 ***
-```sh
-python3 bit.py https://www.google.com/
-python3 bit.py http://bit.ly/2P5kyX2
-```
-
-Пример:
-![Alt Text]()
+Все изображения сохраняются в папку images.
