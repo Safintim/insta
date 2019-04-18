@@ -18,7 +18,7 @@ def upload_images():
             continue
         posted_images.add(image)
 
-    is_all_loaded = set(images).difference(posted_images)
+    is_not_all_loaded = set(images).difference(posted_images)
 
-    if is_all_loaded:
-        print('These images were not uploaded: {}'.format(is_all_loaded))
+    if is_not_all_loaded:
+        print('These images were not uploaded: {}'.format(is_not_all_loaded))
