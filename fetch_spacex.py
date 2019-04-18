@@ -24,5 +24,3 @@ def fetch_spacex_last_launch():
     for i, image_url in enumerate(pictures):
         filename = 'spacex{}.{}'.format(i, get_file_extension(image_url))
         get_picture(image_url, filename)
-
-fetch_spacex_last_launch()

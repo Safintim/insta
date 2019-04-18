@@ -30,5 +30,3 @@ def fetch_hubble(collection='wallpaper'):
     response = requests.get(collection_url).json()
     for image in response:
         fetch_hubble_once_image(image['id'])
-
-fetch_hubble()
