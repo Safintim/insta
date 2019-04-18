@@ -22,5 +22,3 @@ def upload_images():
 
     if is_all_loaded:
         print('These images were not uploaded: {}'.format(is_all_loaded))
-
-
