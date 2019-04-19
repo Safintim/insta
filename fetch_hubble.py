@@ -2,7 +2,7 @@ import requests
 from settings import get_file_extension, download_and_save_image
 
 
-def fetch_hubble_once_image(image_id):
+def get_one_image_from_hubble(image_id):
     image_id_url = 'http://hubblesite.org/api/v3/image/{}'
     response = requests.get(image_id_url.format(image_id))
     response.raise_for_status()
@@ -19,4 +19,12 @@ def fetch_hubble(collection='wallpaper'):
     response.raise_for_status()
 
     for image in response.json():
-        fetch_hubble_once_image(image['id'])
+        get_one_image_from_hubble(image['id'])
+
+
+def main():
+    fetch_hubble()
+
+
+if __name__ == '__main__':
+    main()
