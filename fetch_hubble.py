@@ -1,20 +1,5 @@
 import requests
-import pathlib
-
-
-def get_file_extension(file_url):
-    return file_url.split('.')[-1]
-
-
-def get_picture(url, filename):
-
-    directory = 'images/'
-    pathlib.Path(directory).mkdir(exist_ok=True)
-    response = requests.get(url)
-    response.raise_for_status()
-
-    with open(directory+filename, 'wb') as f:
-        f.write(response.content)
+from settings import get_file_extension, download_and_save_image
 
 
 def fetch_hubble_once_image(image_id):
