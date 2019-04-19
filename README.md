@@ -53,7 +53,8 @@ python3 upload_images.py
 ![Alt Text](http://ipic.su/img/img7/fs/insta1.1555686468.gif)
 
 Загружаем картинки в instagram
-![Alt Text](http://ipic.su/img/img7/fs/insta2.1555687356.gif)
+
+![Alt Text](http://ipic.su/img/img7/fs/insta2.1555687771.gif)
 
 ## Комментарий: 
 ***
