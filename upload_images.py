@@ -4,6 +4,12 @@ from instabot import Bot
 import os
 
 
+def create_and_login_bot(login, password):
+    bot = Bot()
+    bot.login(username=login, password=password)
+    return bot
+
+
 def upload_images(bot):
     images = os.listdir(IMAGE_PATH)
     posted_images = set()
@@ -23,8 +29,7 @@ def main():
     load_dotenv()
     login = os.getenv('LOGIN')
     password = os.getenv('PASSWORD')
-    bot = Bot()
-    bot.login(username=login, password=password)
+    bot = create_and_login_bot(login, password)
     upload_images(bot)
 
 
