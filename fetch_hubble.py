@@ -9,7 +9,7 @@ def fetch_hubble_once_image(image_id):
 
     last_image_url = response.json()['image_files'][-1]['file_url']
     filename = 'hubble{}.{}'.format(image_id, get_file_extension(last_image_url))
-    get_picture(last_image_url, filename)
+    download_and_save_image(last_image_url, filename)
 
 
 def fetch_hubble(collection='wallpaper'):
