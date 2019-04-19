@@ -12,3 +12,11 @@ def fetch_spacex_last_launch():
     for i, image_url in enumerate(pictures):
         filename = 'spacex{}.{}'.format(i, get_file_extension(image_url))
         download_and_save_image(image_url, filename)
+
+
+def main():
+    fetch_spacex_last_launch()
+
+
+if __name__ == '__main__':
+    main()
