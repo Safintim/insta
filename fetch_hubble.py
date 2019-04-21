@@ -1,5 +1,5 @@
 import requests
-from settings import get_file_extension, download_and_save_image
+from download_tools import get_file_extension, download_and_save_image
 
 
 def get_one_image_from_hubble(image_id):
